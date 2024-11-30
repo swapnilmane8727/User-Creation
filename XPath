@@ -1,0 +1,216 @@
+                                    XPath
+     Absolute XPath
+     Relative XPath
+     Relative + Absolute XPath
+     
+Relative XPath
+//
+
+1 = Finding element with tagname
+//a
+//img
+//input
+//select
+//span
+
+2 = Finding element with attribute and value
+case sensitive
+' ' and " " allowed (Single & Double quotes allowed)
+//tagname[@attribute='value'] 
+//input[@id='email1']
+//input[@id="email1"]
+//button[@type="submit"]
+//button[@class="submit-btn"]
+
+3 = Finding element with Multiple attribute and value
+Using and
+//tagname[@attribute1='value1' and @attribute2='value2']
+ex: //input[@id="email1" and @placeholder='Email']
+
+Using or
+//tagname[@attribute1='value1' or @attribute2='value2']
+ex: //input[@id="email1" or @placeholder='Email']
+
+
+4 = Index based XPath
+    (Xpath)[index]
+    (//a)[6]
+    
+5 = contains function
+    //tagname[contains(@attribute,'value')]
+    //input[contains(@id,'email')]
+    //input[contains(@id,'e')]
+    //input[contains(@type,'pass')]
+    //a[contains(@href,'youtube')]
+    //a[contains(@href,'twitter')]
+
+6 = Text function
+     //tagname[text()='Text to find']
+     //a[text()='Practise']
+     //a[text()='New user? Signup']
+     //h2[text()='Connect with us']
+     //*[text()='Connect with us']
+     
+ 
+7 = Test function with contains
+    //tagname[contains(text(),'text to find')]
+    //a[contains(text(),'Practise')]
+    //a[contains(text(),'Prac')]
+    
+
+What is the diff b/w 
+   //a[text()='Practise']
+   //a[normalize-space()='Practise']
+   
+Answer = in normalize-space() : No need to give text which has before or after space
+       = in text()            : We need to give exact text even if it has before or after space
+       
+
+.........
+
+
+Relative + Absolute XPathtr
+
+/html/body/dev[1]/div[2]/ul/li[1]/a/b
+
+combination
+
+//ul[contains(@id,'main menu')]/li/a/b
+//ul[contains(@id,'main menu')]//b
+
+//table[@id='resultTable']/tbody/tr/td/input[@type='checkbox']
+//table[@id='resultTable']//input[@type='checkbox']
+
+................................................................................  
+      
+      
+      
+                               XPATH AXES for traverse
+
+Syntax
+
+//XPath//following::tagname
+//XPath//preceding::tagname
+
+
+Match all elements after manda
+//div[text()='manda user']//following::*
+
+Match all elements before manda
+//div[text()='manda user']//preceding::*
+
+Match with the 1st input after password
+//*[text()='Password']//following::input[1]
+
+Find first dropdown after User role
+//*[text()='User role']//following::select[1]
+
+Find first input tag after Confirm Password
+//*[text()='Confirm Password']//following::input[1]
+
+Find first dropdown after Status
+//*[text()='Status']//following::select[1]
+
+To reach parent node
+Syntax:    //parent::tagname
+                  or
+                  //..
+                  
+To reach child node
+Syntax:   //child::tagname
+                  or
+                  /
+                  
+................................................................................               
+                  
+                              CSS Selector
+                  
+Text function is not present
+Trverse is back direction not allowed
+
+Id
+  #
+  
+Class
+  .
+  
+Contains
+  *
+  
+Starts with 
+  ^
+  
+Ends with
+  $
+  
+  
+Examples
+   #email1         - it will find all the element which has id email1
+   input#email1    - it will find the input tag which has a id email1
+   
+Synatx 
+   tagname[attribute='value']      
+   input[name='email1']              Css
+         or
+   //input[@name='email1']           XPath
+
+Input button
+   input[button='txtusername']
+   
+   input[id^='txtusername']
+   input[id$='txtusername']
+   input[id*='txtusername']
+   
+   div[class='orangehrm-login-footer-sm']
+         or
+   div.orangehrm-login-footer-sm
+   
+   
+   div[class='orangehrm-login-footer-sm'] a
+   
+   div[class='orangehrm-login-footer-sm'] a
+   
+   div[class='orangehrm-login-footer-sm'] a:nth-child(2)
+   div[class='orangehrm-login-footer-sm'] a:first-child
+   
+   div[class='orangehrm-login-footer-sm'] a:nth-of-type(2)
+   
+...................................................
+
+
+Sequence to be followed
+
+locators
+
+   id
+   name
+   className
+   linkText
+   partialLinkText
+   Xpath
+   Css
+   tagname
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

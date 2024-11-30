@@ -1,0 +1,19 @@
+Waits in Selenium - Dynamic in nature
+
+Timeouts (Interface) = pageLoadTimeOut, scriptTimeOut, implicitlyWait
+
+
+pageLoadTimeOut
+        Wait for page load to finish
+        
+scriptTimeOut
+        Wait for script to finish
+        
+implicitlyWait
+        Wait for element to be visibile and displayed
+        
+ExpilictWait
+          -FluentWait
+          -WebDriverWait
+        
+Offcial Link - https://www.selenium.dev/documentation/webdriver/waits/        

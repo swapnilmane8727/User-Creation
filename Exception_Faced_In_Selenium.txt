@@ -1,0 +1,49 @@
+1- Session NotCreated Exception    - When browser failed to start
+
+2- Invalid argument Exception      - when no http or https is provided
+
+3- IllegalArgumentException        - Keys to send should be a not null CharSequence
+             Example - driver.findElement(By.id("")).sendkeys(null)
+        
+    Another Scenario - InvalidArgumentException - when trying to upload file but path is incorrect     
+             
+             
+4- NoSuchElementException          - If element not found
+
+5- ElementNotInteractableException - when Element/Field is disabled 
+             and we are trying to interact with it
+
+6- InvalidSelectorException         - Selectors not valid
+
+7- JavascriptException              - Unable to locate an element with the xpath expression 
+
+8- Unexpected TagName Exception     - When you use Select class in selenium but element does not have select tag 
+ 
+9- StaleElementReferenceException   - Element is not attached to the page document, 
+            Element is loosing its refernece or not attached to DOM
+
+10- UnHandledAlertExecption         - Whenever Aler/confirm/prompt is active and we try to interact with WebElements
+             or try to take SS will throw this exception
+             
+11- NoAlertPresentException         - If Alert is not present
+
+12- NoSuchWindowException           - If window handle does not exist
+
+13- NoSuchSessionException          - Session ID is null, or when we use driver.quit(); after if we try to access again
+
+14- NoSuchFrameException            - when Frame is missing
+
+15- TimeoutException                - Page load timeout
+
+16- TestNGException                 - cyclic dependenices where Test is depended on each other
+
+
+
+
+
+
+
+
+
+
+

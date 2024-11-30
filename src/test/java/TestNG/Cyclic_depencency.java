@@ -1,0 +1,32 @@
+package TestNG;
+
+import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+public class Cyclic_depencency 
+{
+
+	/* Dependency */
+	
+	@Test(dependsOnMethods = "logout")          // this test depends on below test
+	public void login()
+	{
+		Assert.assertTrue(true);
+		Reporter.log("Login to application", true);
+	}
+	
+	@Test(dependsOnMethods = "login")          // // this test depends on above test
+	public void logout()
+	{
+		Assert.assertTrue(true);
+		Reporter.log("Logout from application", true);
+	}
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,29 @@
+Testing Framework
+       JUnit
+       TestNG (will be using now)
+       
+       
+Reading Excel
+       Apache POI (will be using now)
+       JExcel
+       
+       
+Faker - Fake Data (will be using now)
+
+
+Reporting
+       Extent Report (will be using now)
+       Allure Report
+       
+       
+PDF
+       PDFBox
+       
+       
+SQL
+       JDBC
+       
+       
+API Framework
+       RestAssured    
+          

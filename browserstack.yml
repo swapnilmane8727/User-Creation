@@ -1,0 +1,9 @@
+userName: swapnilmane_4y5urA
+accessKey: G8ti1SCJz7UyFHSNbVsA
+platforms:
+  - browserName: Chrome
+    os: Windows
+    osVersion: 11
+    browserVersion: latest
+buildIdentifier: ${BUILD_NUMBER}
+consoleLogs: info

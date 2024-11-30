@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+  <test name="SeleniumWithTestNG">
+    <classes>
+      <class name="Selenium_Grid.SeleniumWithTestNG"/>
+    </classes>
+  </test> 
+  
+    <test name="AssertDemo">
+    <classes>
+      <class name="Selenium_Grid.AssertDemo"/>
+    </classes>
+  </test> 
+  
+    <test name="MyFirstTestNG">
+    <classes>
+      <class name="Selenium_Grid.MyFirstTestNG"/>
+    </classes>
+  </test> 
+  
+    <test name="MyFirstTestNG2">
+    <classes>
+      <class name="Selenium_Grid.MyFirstTestNG2"/>
+    </classes>
+  </test> 
+  
+
+</suite> 
